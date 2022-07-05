@@ -1,13 +1,29 @@
 {
 	"extends": "./.svelte-kit/tsconfig.json",
+
+	// https://github.com/ivanhofer/sveltekit-typescript-showcase#configure-typescript
+
 	"compilerOptions": {
-		"allowJs": true,
-		"checkJs": true,
-		"esModuleInterop": true,
-		"forceConsistentCasingInFileNames": true,
-		"resolveJsonModule": true,
-		"skipLibCheck": true,
-		"sourceMap": true,
-		"strict": true
-	}
+		"strict": true,
+		"allowUnreachableCode": false,
+		"exactOptionalPropertyTypes": true,
+		"noImplicitAny": true,
+		"noImplicitOverride": true,
+		"noImplicitReturns": true,
+		"noImplicitThis": true,
+		"noFallthroughCasesInSwitch": true,
+		"noUncheckedIndexedAccess": true
+	 }
+
+	// "compilerOptions": {
+	// 	"allowJs": true,
+	// 	"checkJs": true,
+	// 	"esModuleInterop": true,
+	// 	"forceConsistentCasingInFileNames": true,
+	// 	"resolveJsonModule": true,
+	// 	"skipLibCheck": true,
+	// 	"sourceMap": true,
+	// 	"strict": true
+	// }
+
 }
